@@ -9,8 +9,18 @@ Kaggle - https://www.kaggle.com/c/homesite-quote-conversion/
 ## Contents
 This repository contains:
 
+- *Kaggle Submissions.ipynb* - Notebook containing Logistic Regression, Elastic Net, Decision Tree, Random Forest, XGB HyperOpt, XGB SkOpt and XGB Ax and methodology to stack all models
+- *tools.py* - python file containing useful python functions
+
+## Results
+
+Using only 5000 records, no feature engineering and no categorical features, this output ranks 1574/1755.
+
 ## Future Developments
 Developments to investigate / consider:
+
+- Add in categorical variables and add suitable transformation
+- Need to check num_boost_round and n_estimators and early stopping
 
 ## Author
 Ben Turner
