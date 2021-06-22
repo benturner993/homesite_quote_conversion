@@ -19,8 +19,13 @@ Using only 5000 records, no feature engineering and no categorical features, thi
 ## Future Developments
 Developments to investigate / consider:
 
+- Add GLM modelling functionality
 - Add in categorical variables and add suitable transformation
-- Need to check num_boost_round and n_estimators and early stopping
+- Create frequency function code which dictionary to create MI column 
+- Add in capping and collaring for float variables (remove outliers)
+- Remove highly correlated variables
+- Find most important features and re-model with those which are consistently important in the differing modelling approaches.
+- Revise code to check num_boost_round and n_estimators and ensure early stopping is working
 
 ## Author
 Ben Turner
