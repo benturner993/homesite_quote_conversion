@@ -188,3 +188,13 @@ def classification_model(model, data, predictors, outcome):
     
     #Fit the model again so that it can be refered outside the function:
     model.fit(data[predictors],data[outcome])
+    
+def return_categoric_columns(df):
+    
+    ''' function to return categoric columns '''
+
+    all_columns = list(df.columns)
+    numeric_types = ['int16', 'int32', 'int64', 'float16', 'float32', 'float64', 'uint8']
+    numeric_columns = df.select_dtypes(include=numeric_types).columns.to_list()
+    categoric_columns = list(set(all_columns) - set(numeric_columns))
+    return categoric_columns
