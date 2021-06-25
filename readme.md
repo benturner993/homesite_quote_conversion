@@ -9,7 +9,7 @@ Kaggle - https://www.kaggle.com/c/homesite-quote-conversion/
 ## Contents
 This repository contains:
 
-- *Kaggle Submissions.ipynb* - Notebook containing Logistic Regression, Elastic Net, Decision Tree, Random Forest, XGB HyperOpt, XGB SkOpt and XGB Ax and methodology to stack all models
+- *Kaggle Submissions.ipynb* - Notebook containing Logistic Regression, Elastic Net, SVM, Decision Tree, Random Forest, XGB HyperOpt, XGB SkOpt and XGB Ax and methodology to stack all models
 - *tools.py* - python file containing useful python functions
 
 ## Results
@@ -20,12 +20,13 @@ Using only 5000 records, no feature engineering and no categorical features, thi
 Developments to investigate / consider:
 
 - Add GLM modelling functionality
-- Add in categorical variables and add suitable transformation
+- Add in categorical variables and add suitable transformation (added 24/06/21)
 - Create frequency function code which dictionary to create MI column 
 - Add in capping and collaring for float variables (remove outliers)
 - Remove highly correlated variables
 - Find most important features and re-model with those which are consistently important in the differing modelling approaches.
 - Revise code to check num_boost_round and n_estimators and ensure early stopping is working
+- Store / return most important features from each algorithm
 
 ## Author
 Ben Turner
